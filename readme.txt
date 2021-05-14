@@ -48,7 +48,7 @@ You can clear the list of ignored posts in the options, next to **Clear Ignored 
 
 == Changelog ==
 
-### 0.1 (Beta) - 2020-09-23
+### 1.0 - 2021-05-14
 
 #### Added
 - Everything.

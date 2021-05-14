@@ -4,7 +4,7 @@
 Plugin Name: Little Free Archive Freshener
 Description: Little Free Archive Freshener is a helpful dashboard widget that prompts you to update your archives, one post or page at a time.
 Author: Sam Glover
-Version: 0.1
+Version: 1.0
 Author URI: https://samglover.net
 */
 
