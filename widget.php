@@ -98,7 +98,7 @@ function widget() {
       $post_title         = get_the_title( $post_id );
       $post_last_modified = esc_html( human_time_diff( get_the_modified_date( 'U', $post_id ), current_time( 'timestamp' ) ) );
 
-      echo '<p>' . __( 'It looks like this could use an update:', 'archive-freshener' ) . '</p>';
+      echo '<p>' . __( 'This looks like it could use an update:', 'archive-freshener' ) . '</p>';
 
       echo '<strong style="font-size: 150%;"><a href="' . $post_url . '" title="' . __( 'Click to edit this.', 'archive-freshener' ) . '">' . $post_title . '</a></strong>';
 
