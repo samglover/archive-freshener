@@ -33,17 +33,22 @@ You can change the number of days in the options, next to **Freshen After**. If 
 You can also change the post types included in the query. By default, Little Free Archive Freshener selects from posts and pages. But other themes and plugins may have added other post types. For example, WooCommerce adds a *product* post type. In the options, next to **Include Post Types**, check the boxes next to any post types you want to keep updated.
 
 
-= What does **skip for now** do when I click it? =
+= What does "skip for now" do when I click it? =
 
 You can click **skip now** to skip a post—for now—and get a new suggestion. It goes right back into the pool. (There is a chance it will be selected again, of course, especially if you don't have many posts.)
 
 
-= What does **ignore forever** do when I click it? =
+= What does "ignore forever" do when I click it? =
 
 If you click **ignore forever**, the post is added to a list of posts that are excluded from Little Free Archive Freshener's query when it goes to fetch a post that needs updating. You will also get a new suggestion.
 
 You can clear the list of ignored posts in the options, next to **Clear Ignored Posts**.
 
+
+== Screenshots ==
+
+1. Dashboard Widget
+2. Options
 
 
 == Changelog ==
