@@ -33,7 +33,7 @@ function add_widget() {
 
   wp_add_dashboard_widget(
     'archive_freshener_widget',
-    'Freshen Up Your Archives <a href="' . get_admin_url( '', 'options-writing.php' ) . '">' . __( 'Options', 'archive-freshener' ) . '</a>',
+    'Freshen Up Your Archives <a href="' . get_admin_url( '', 'options-writing.php' ) . '">' . __( 'Options', 'little-free-archive-freshener' ) . '</a>',
     __NAMESPACE__ . '\widget',
     null,
     null,
@@ -98,22 +98,22 @@ function widget() {
       $post_title         = get_the_title( $post_id );
       $post_last_modified = esc_html( human_time_diff( get_the_modified_date( 'U', $post_id ), current_time( 'timestamp' ) ) );
 
-      echo '<p>' . __( 'This looks like it could use an update:', 'archive-freshener' ) . '</p>';
+      echo '<p>' . __( 'This looks like it could use an update:', 'little-free-archive-freshener' ) . '</p>';
 
-      echo '<strong style="font-size: 150%;"><a href="' . $post_url . '" title="' . __( 'Click to edit this.', 'archive-freshener' ) . '">' . $post_title . '</a></strong>';
+      echo '<strong style="font-size: 150%;"><a href="' . $post_url . '" title="' . __( 'Click to edit this.', 'little-free-archive-freshener' ) . '">' . $post_title . '</a></strong>';
 
-      echo '<br /><small>' . sprintf( __( 'It was last updated %1$s ago.', 'archive-freshener' ), $post_last_modified ) . '</small>';
+      echo '<br /><small>' . sprintf( __( 'It was last updated %1$s ago.', 'little-free-archive-freshener' ), $post_last_modified ) . '</small>';
 
-      $skip_link    = '<a href="' . add_query_arg( [ 'lfaf_post_id' => $post_id, 'lfaf_archive_action' => 'skip' ] ) . '">' . __( 'skip it for now', 'archive-freshener' ) . '</a>';
-      $ignore_link  = '<a href="' . add_query_arg( [ 'lfaf_post_id' => $post_id, 'lfaf_archive_action' => 'ignore' ] ) . '">' . __( 'ignore it forever', 'archive-freshener' ) . '</a>';
+      $skip_link    = '<a href="' . add_query_arg( [ 'lfaf_post_id' => $post_id, 'lfaf_archive_action' => 'skip' ] ) . '">' . __( 'skip it for now', 'little-free-archive-freshener' ) . '</a>';
+      $ignore_link  = '<a href="' . add_query_arg( [ 'lfaf_post_id' => $post_id, 'lfaf_archive_action' => 'ignore' ] ) . '">' . __( 'ignore it forever', 'little-free-archive-freshener' ) . '</a>';
       $post_query   = new \WP_Query( get_new_post_args() );
 
-      echo '<p><small>' . sprintf( __( 'Update it to get a new suggestion (there are %1$s more). You can also %2$s or %3$s.', 'archive-freshener' ), $post_query->found_posts - 1, $skip_link, $ignore_link ) . '</small></p>';
+      echo '<p><small>' . sprintf( __( 'Update it to get a new suggestion (there are %1$s more). You can also %2$s or %3$s.', 'little-free-archive-freshener' ), $post_query->found_posts - 1, $skip_link, $ignore_link ) . '</small></p>';
 
     } else {
 
-      echo '<p>' . __( 'There\'s nothing left to update!', 'archive-freshener' ) . '</p>';
-      echo '<p><small>' . sprintf( __( '(If this doesn\'t seem right, try %1$sadding more post types%2$s.)', 'archive-freshener' ), '<a href="' . get_admin_url( '', 'options-writing.php' ) . '">', '</a>' ) . '</small></p>';
+      echo '<p>' . __( 'There\'s nothing left to update!', 'little-free-archive-freshener' ) . '</p>';
+      echo '<p><small>' . sprintf( __( '(If this doesn\'t seem right, try %1$sadding more post types%2$s.)', 'little-free-archive-freshener' ), '<a href="' . get_admin_url( '', 'options-writing.php' ) . '">', '</a>' ) . '</small></p>';
 
     }
 
@@ -133,8 +133,8 @@ function widget() {
 
     $formatted_roles = get_formatted_list( $roles_with_edit_others_posts );
 
-    echo '<p><strong>' . __( 'Sorry, you don\'t have permision to update posts.', 'archive-freshener' ) . '</strong></p>';
-    echo '<p><small>' . __( 'In order to use this plugin you must have one of these user roles:', 'archive-freshener' ) . ' ' . $formatted_roles . '.</small></p>';
+    echo '<p><strong>' . __( 'Sorry, you don\'t have permision to update posts.', 'little-free-archive-freshener' ) . '</strong></p>';
+    echo '<p><small>' . __( 'In order to use this plugin you must have one of these user roles:', 'little-free-archive-freshener' ) . ' ' . $formatted_roles . '.</small></p>';
     echo '<p><small>' . __( 'Or you can hide this widget by clicking on the <strong>Screen Options</strong> tab at the top of this page.' ) . '</small></p>';
 
   }
