@@ -1,7 +1,7 @@
 === Little Free Archive Freshener ===
 
 Contributors: samglover
-Tags: archive, maintenance
+Tags: archive, maintenance, seo
 Requires at least: 5.5
 Tested up to: 5.7.2
 Requires PHP: 7.3.5
