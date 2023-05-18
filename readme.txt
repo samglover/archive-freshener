@@ -3,7 +3,7 @@
 Contributors: samglover
 Tags: archive, maintenance, seo
 Requires at least: 5.5
-Tested up to: 5.9
+Tested up to: 6.2.1
 Requires PHP: 7.3.5
 Stable tag: trunk
 License: GPLv3
@@ -49,6 +49,12 @@ The *ignore it forever* option is for posts or pages that don’t ever need to b
 
 
 == Changelog ==
+
+### 1.0.1 - 2023-05-18
+
+#### Changed
+- Incremented version number and changed some formatting. No substantive changes.
+
 
 ### 1.0 - 2021-05-14
 
