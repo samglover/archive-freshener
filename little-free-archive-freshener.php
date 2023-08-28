@@ -5,7 +5,7 @@ Plugin Name: Little Free Archive Freshener
 Plugin URI: https://samglover.net/projects/little-free-archive-freshener/
 Description: Little Free Archive Freshener is a helpful dashboard widget that prompts you to update your archives, one post or page at a time.
 Author: Sam Glover
-Version: 1.0.1
+Version: 1.0.2
 Author URI: https://samglover.net
 */
 
@@ -16,7 +16,7 @@ if (!defined('ABSPATH')) exit;
 /**
  * Constants
  */
-define('ARCHIVE_FRESHENER_PLUGIN_VERSION', '1.0.1');
+define('ARCHIVE_FRESHENER_PLUGIN_VERSION', '1.0.2');
 define('ARCHIVE_FRESHENER_DIR_PATH', plugin_dir_path(__FILE__));
 define('ARCHIVE_FRESHENER_DIR_URL', plugin_dir_url(__FILE__));
 

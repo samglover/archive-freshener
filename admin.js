@@ -10,7 +10,7 @@
        * is ready they will have already been processed by the
        * process_query_args() function in widget.php.)
        */
-      let baseURL       = [location.protocol, '//', location.host, location.pathname}.join('');
+      let baseURL       = [location.protocol, '//', location.host, location.pathname].join('');
       const params      = new URLSearchParams(location.search);
 
       params.delete('lfaf_archive_action');
