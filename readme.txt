@@ -3,7 +3,7 @@
 Contributors: samglover
 Tags: archive, maintenance, seo
 Requires at least: 5.5
-Tested up to: 6.2.1
+Tested up to: 6.6
 Requires PHP: 7.3.5
 Stable tag: trunk
 License: GPLv3
